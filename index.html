@@ -15,9 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <link rel="stylesheet" href="./assets/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -53,9 +50,9 @@
                             <span style="display:block;">${repo.description}</span>
                         </div>
                         <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i> ${repo.language}</span>
-                            <span><i class="fas fa-star"></i> ${repo.stargazers_count}</span>
-                            <span><i class="fas fa-code-branch"></i> ${repo.forks}</span>
+                            <span style="display:inline-block;"><i class="fa-code"></i> ${repo.language}</span>
+                            <span><i class="fa-star"></i> ${repo.stargazers_count}</span>
+                            <span><i class="fa-code-branch"></i> ${repo.forks}</span>
                         </div>
                     </section>
                 </a>`
@@ -73,11 +70,11 @@
             document.getElementById('profile_img').style = `background: url(${user.avatar_url}) center;`;
             document.getElementById('username').innerHTML = `<span style="display:block;">${user.name}</span>@${user.login}`;
             document.getElementById('userbio').innerHTML = user.bio;
-            document.getElementById('about').innerHTML += user.company ? `<span style="display:block;"><i class="fas fa-users"></i> ${user.company}</span>` : "";
-            document.getElementById('about').innerHTML += user.email ? `<span style="display:block;"><i class="fas fa-envelope"></i> ${user.email}</span>` : "";
-            document.getElementById('about').innerHTML += user.blog ? `<span style="display:block;"><i class="fas fa-link"></i> ${user.blog}</span>` : "";
-            document.getElementById('about').innerHTML += user.location ? `<span style="display:block;"><i class="fas fa-map-marker-alt"></i> ${user.location}</span>` : "";
-            document.getElementById('about').innerHTML += user.hireable ? `<span style="display:block;"><i class="fas fa-user-tie"></i> Available for hire</span>` : "";
+            document.getElementById('about').innerHTML += user.company ? `<span style="display:block;"><i class="fa-users"></i> ${user.company}</span>` : "";
+            document.getElementById('about').innerHTML += user.email ? `<span style="display:block;"><i class="fa-envelope"></i> ${user.email}</span>` : "";
+            document.getElementById('about').innerHTML += user.blog ? `<span style="display:block;"><i class="fa-link"></i> ${user.blog}</span>` : "";
+            document.getElementById('about').innerHTML += user.location ? `<span style="display:block;"><i class="fa-map-marker"></i> ${user.location}</span>` : "";
+            document.getElementById('about').innerHTML += user.hireable ? `<span style="display:block;"><i class="fa-user-tie"></i> Available for hire</span>` : "";
         });
 
         // Fetches only non-fork repositories sorted by star count.
